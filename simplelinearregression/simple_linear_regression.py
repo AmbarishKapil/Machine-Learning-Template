@@ -28,7 +28,10 @@ regressor.fit(X_train, Y_train)
 # Predicting the test set results
 Y_pred = regressor.predict(X_test)
 
+# Plotting results
 import matplotlib.pyplot as plt
 plt.scatter(X_test,Y_test,color='red')
 plt.plot(X_test,Y_pred,color='blue')
 plt.show()
+
+
