@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('Social_Network_Ads.csv')
+df = pd.read_csv("../../../data/Social_Network_Ads.csv")
 X = df.iloc[:, [1,2,3]].values
 Y = df.iloc[:, 4].values
 
@@ -37,5 +37,7 @@ Y_pred = classifier.predict(X_test)
 
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(Y_test, Y_pred)
+
+print(type(cm))
 
 

@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 # Importing Dataset
-dataset = pd.read_csv("50_Startups.csv")
+dataset = pd.read_csv("../../../data/50_Startups.csv")
 X = dataset.iloc[:, :-1].values
 Y = dataset.iloc[:, -1:].values
 

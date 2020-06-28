@@ -22,7 +22,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('Social_Network_Ads.csv')
+df = pd.read_csv("../../../data/Social_Network_Ads.csv")
 X = df.iloc[:, 2:-1].values
 Y = df.iloc[:, -1:].values
 
